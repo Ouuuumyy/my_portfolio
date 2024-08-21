@@ -22,8 +22,10 @@ function MySkills() {
                     My <span className='text-red'>Skills</span>
                     <LineGradient width='w-1/3'/>
                     <p className='mt-10 mb-7 text-[20px] '>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Dicta nam doloremque officia tempora enim itaque rem. In, 
+                    My diverse skill set makes me a unique and dynamic professional. 
+                    Not only do I excel in web development,
+                     creating functional and visually appealing websites,
+                      but I also bring a creative, artistic flair to my work.
                     </p>
                 </p>
             </motion.div>
