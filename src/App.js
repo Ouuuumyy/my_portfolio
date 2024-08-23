@@ -68,9 +68,8 @@ function App() {
           <Projects />
         </motion.div>
       </div>
-      <LineGradient />
+      <LineGradient className="hidden md:block"/>
      
-      <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"

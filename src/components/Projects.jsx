@@ -15,21 +15,20 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, url }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
+      
+      <a href={url} target="_blank" rel="noopener noreferrer">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
       </div>
-      <img src={`${projectTitle}.jpeg`} alt={projectTitle} />
+        <img src={`${projectTitle}.png`} alt={projectTitle} className="w-full h-full object-cover" />
+      </a>
     </motion.div>
   );
 };
@@ -58,9 +57,9 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-        Here are some of my most interesting projects that showcase my skills and demonstrate 
-        my ability to create professional and impactful content. Each project reflects my commitment to quality, 
-         innovation, and my unique blend of technical and artistic expertise.
+          Here are some of my most interesting projects that showcase my skills and demonstrate
+          my ability to create professional and impactful content. Each project reflects my commitment to quality,
+          innovation, and my unique blend of technical and artistic expertise.
         </p>
       </motion.div>
 
@@ -76,27 +75,20 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[700px] max-h-[400px] text-2xl font-playfair font-semibold w-full h-full"
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="project-1" />
-          <Project title="Project-2" />
+          <Project title="portfolio" url="https://portforyou-oum.vercel.app/"/>
+          <Project title="recipeapp" url = "https://rentapp-tau.vercel.app/" />
 
           {/* ROW 2 */}
-          <Project title="project-3" />
-          <Project title="Project-4" />
-          <Project title="Project-5" />
+          <Project title="rentapp" url="https://rentapp-tau.vercel.app/" />
+          <Project title="shopapp" url="https://recipeppy.vercel.app/"/>
+          <Project title="aiapp" url="https://oum-ai.vercel.app/" />
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+
         </motion.div>
       </div>
     </section>
