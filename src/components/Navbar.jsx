@@ -65,7 +65,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           {/* mobile menu */}
 
           {!isDesktop && isMenuToggled  && (
-            <div className="fixed right00 bottom-0 h-full w-full bg-blue ">
+            <div className="fixed right00 bottom-0 h-full w-full bg-[#89e4f2] ">
                 <div className="flex justify-end p-12 ">
                     <button className="pr-12" onClick={()=>setIsMenuToggled(!isMenuToggled)}>
                       <MdCancel className="text-5xl" />
