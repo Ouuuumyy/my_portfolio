@@ -80,11 +80,11 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
           <Project title="portfolio" url="https://portforyou-oum.vercel.app/"/>
-          <Project title="recipeapp" url = "https://rentapp-tau.vercel.app/" />
+          <Project title="recipeapp" url = "https://recipeppy.vercel.app/" />
 
           {/* ROW 2 */}
           <Project title="rentapp" url="https://rentapp-tau.vercel.app/" />
-          <Project title="shopapp" url="https://recipeppy.vercel.app/"/>
+          <Project title="shopapp" url="https://shopoum.vercel.app/"/>
           <Project title="aiapp" url="https://oum-ai.vercel.app/" />
 
           {/* ROW 3 */}
